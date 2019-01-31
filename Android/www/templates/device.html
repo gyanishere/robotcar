@@ -1,0 +1,25 @@
+<ion-view title="Ionic BLE Attendance" ng-controller="DeviceController as device_ctrl" ng-init="init()">
+  <header class="bar bar-header bar-stable">
+    <button class="button icon ion-chevron-left" ng-click="backToHome()"></button>
+    <h1 class="title">Device Connection</h1>
+  </header>
+  <header class="bar bar-subheader">
+    <h2 class="title">{{device.name}}</h2>
+  </header>
+
+  <ion-content class="has-header has-subheader padding">
+
+    <!-- <div class="list">
+      <input type="text" ng-model="device_ctrl.input" placeholder="yo">
+      <button class="item button button-positive button-full" ng-click="send()">
+      Attend
+      </button>
+    </div> -->
+
+    <ion-list>
+      <ion-item ng-repeat='step in steps' style='white-space:normal'>{{step.html}}</ion-item>
+    </ion-list>
+
+  </ion-content>
+
+</ion-view>
